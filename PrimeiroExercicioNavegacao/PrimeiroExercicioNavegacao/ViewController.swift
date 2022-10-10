@@ -14,6 +14,12 @@ class ViewController: UIViewController {
         // primeiroCommit
     }
 
-
+    @IBAction func tappedButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "buttonToScreen02", sender: nil)
+        
+        
+    }
+    
+    
 }
 
