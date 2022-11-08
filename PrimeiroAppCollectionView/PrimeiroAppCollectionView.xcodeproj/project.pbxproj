@@ -13,6 +13,8 @@
 		3634919D2919C4E00016E7FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3634919B2919C4E00016E7FE /* Main.storyboard */; };
 		3634919F2919C4E10016E7FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3634919E2919C4E10016E7FE /* Assets.xcassets */; };
 		363491A22919C4E10016E7FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363491A02919C4E10016E7FE /* LaunchScreen.storyboard */; };
+		363491AC2919CB960016E7FE /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363491AA2919CB960016E7FE /* CustomCollectionViewCell.swift */; };
+		363491AD2919CB960016E7FE /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363491AB2919CB960016E7FE /* CustomCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3634919E2919C4E10016E7FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		363491A12919C4E10016E7FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		363491A32919C4E10016E7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		363491AA2919CB960016E7FE /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		363491AB2919CB960016E7FE /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		363491942919C4E00016E7FE /* PrimeiroAppCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				363491A92919CB540016E7FE /* Cell */,
 				363491952919C4E00016E7FE /* AppDelegate.swift */,
 				363491972919C4E00016E7FE /* SceneDelegate.swift */,
 				363491992919C4E00016E7FE /* ViewController.swift */,
@@ -65,6 +70,15 @@
 				363491A32919C4E10016E7FE /* Info.plist */,
 			);
 			path = PrimeiroAppCollectionView;
+			sourceTree = "<group>";
+		};
+		363491A92919CB540016E7FE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				363491AA2919CB960016E7FE /* CustomCollectionViewCell.swift */,
+				363491AB2919CB960016E7FE /* CustomCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +142,7 @@
 				363491A22919C4E10016E7FE /* LaunchScreen.storyboard in Resources */,
 				3634919F2919C4E10016E7FE /* Assets.xcassets in Resources */,
 				3634919D2919C4E00016E7FE /* Main.storyboard in Resources */,
+				363491AD2919CB960016E7FE /* CustomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +156,7 @@
 				3634919A2919C4E00016E7FE /* ViewController.swift in Sources */,
 				363491962919C4E00016E7FE /* AppDelegate.swift in Sources */,
 				363491982919C4E00016E7FE /* SceneDelegate.swift in Sources */,
+				363491AC2919CB960016E7FE /* CustomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
