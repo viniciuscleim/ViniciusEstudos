@@ -22,7 +22,8 @@ class CustomCollectionViewCell: UICollectionViewCell {
     // ciclo de vida da cell, podendo comprar com o viewDidLoad da ViewController
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        // ultilizado para imagens
+        carImageView.contentMode = .scaleAspectFit
     }
     
     func setupCell(nameImage: String) {

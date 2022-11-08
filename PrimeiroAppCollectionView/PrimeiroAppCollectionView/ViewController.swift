@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var data: [String] = ["car1","car2","car3","car3","car5","car6"]
+    var data: [String] = ["car1","car2","car3","car4","car5","car6"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
