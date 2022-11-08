@@ -11,16 +11,20 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    //var data: [String] = ["car1","car2","car3","car4","car5","car6"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configTableView()
-        // Do any additional setup after loading the view.
+        
     }
     
     func configTableView() {
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(CarTableViewCell.nib(), forCellReuseIdentifier: CarTableViewCell.identifier)
+        tableView.separatorStyle = .none
+        tableView.register(CarsTableViewCell.nib(), forCellReuseIdentifier: CarsTableViewCell.identifier)
+        
         
     }
     
@@ -38,32 +42,18 @@ extension ViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CarTableViewCell.identifier, for: indexPath) as? CarTableViewCell
-        return cell ?? UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: CarsTableViewCell.identifier, for: indexPath) as? CarsTableViewCell
+        //cell?.setupCell(title: "Veiculos:", data: self.data)
+        return UITableViewCell()
+        
         
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 182
+        return 250
     }
     
     
 }
 
-extension ViewController: UICollectionViewDelegate {
-    
-    
-}
-    
-extension ViewController: UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
-    }
-    
-    
-}
 

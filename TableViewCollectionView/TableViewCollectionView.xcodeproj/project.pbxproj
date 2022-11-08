@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36027AFE291AE5A700C27095 /* CarsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36027AFC291AE5A700C27095 /* CarsTableViewCell.swift */; };
+		36027AFF291AE5A700C27095 /* CarsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36027AFD291AE5A700C27095 /* CarsTableViewCell.xib */; };
 		363491BB2919E5710016E7FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363491BA2919E5710016E7FE /* AppDelegate.swift */; };
 		363491BD2919E5710016E7FE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363491BC2919E5710016E7FE /* SceneDelegate.swift */; };
 		363491BF2919E5710016E7FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363491BE2919E5710016E7FE /* ViewController.swift */; };
 		363491C22919E5710016E7FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363491C02919E5710016E7FE /* Main.storyboard */; };
 		363491C42919E5730016E7FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 363491C32919E5730016E7FE /* Assets.xcassets */; };
 		363491C72919E5730016E7FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 363491C52919E5730016E7FE /* LaunchScreen.storyboard */; };
-		363491D12919E74B0016E7FE /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363491CF2919E74B0016E7FE /* CarTableViewCell.swift */; };
-		363491D22919E74B0016E7FE /* CarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 363491D02919E74B0016E7FE /* CarTableViewCell.xib */; };
+		36ACE4DA291ABA7F00381674 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ACE4D8291ABA7F00381674 /* CustomCollectionViewCell.swift */; };
+		36ACE4DB291ABA7F00381674 /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36ACE4D9291ABA7F00381674 /* CustomCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36027AFC291AE5A700C27095 /* CarsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTableViewCell.swift; sourceTree = "<group>"; };
+		36027AFD291AE5A700C27095 /* CarsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarsTableViewCell.xib; sourceTree = "<group>"; };
 		363491B72919E5710016E7FE /* TableViewCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		363491BA2919E5710016E7FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		363491BC2919E5710016E7FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,8 +30,8 @@
 		363491C32919E5730016E7FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		363491C62919E5730016E7FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		363491C82919E5730016E7FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		363491CF2919E74B0016E7FE /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
-		363491D02919E74B0016E7FE /* CarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarTableViewCell.xib; sourceTree = "<group>"; };
+		36ACE4D8291ABA7F00381674 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		36ACE4D9291ABA7F00381674 /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 		363491B92919E5710016E7FE /* TableViewCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				36ACE4D7291ABA3800381674 /* CustomCollectionViewCell */,
 				363491CE2919E7070016E7FE /* TableViewCell */,
 				363491BA2919E5710016E7FE /* AppDelegate.swift */,
 				363491BC2919E5710016E7FE /* SceneDelegate.swift */,
@@ -75,10 +80,19 @@
 		363491CE2919E7070016E7FE /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				363491CF2919E74B0016E7FE /* CarTableViewCell.swift */,
-				363491D02919E74B0016E7FE /* CarTableViewCell.xib */,
+				36027AFC291AE5A700C27095 /* CarsTableViewCell.swift */,
+				36027AFD291AE5A700C27095 /* CarsTableViewCell.xib */,
 			);
 			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		36ACE4D7291ABA3800381674 /* CustomCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				36ACE4D8291ABA7F00381674 /* CustomCollectionViewCell.swift */,
+				36ACE4D9291ABA7F00381674 /* CustomCollectionViewCell.xib */,
+			);
+			path = CustomCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +155,8 @@
 			files = (
 				363491C72919E5730016E7FE /* LaunchScreen.storyboard in Resources */,
 				363491C42919E5730016E7FE /* Assets.xcassets in Resources */,
-				363491D22919E74B0016E7FE /* CarTableViewCell.xib in Resources */,
+				36ACE4DB291ABA7F00381674 /* CustomCollectionViewCell.xib in Resources */,
+				36027AFF291AE5A700C27095 /* CarsTableViewCell.xib in Resources */,
 				363491C22919E5710016E7FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,8 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				363491BF2919E5710016E7FE /* ViewController.swift in Sources */,
+				36ACE4DA291ABA7F00381674 /* CustomCollectionViewCell.swift in Sources */,
+				36027AFE291AE5A700C27095 /* CarsTableViewCell.swift in Sources */,
 				363491BB2919E5710016E7FE /* AppDelegate.swift in Sources */,
-				363491D12919E74B0016E7FE /* CarTableViewCell.swift in Sources */,
 				363491BD2919E5710016E7FE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
